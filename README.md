@@ -39,13 +39,13 @@ look for a tulip:
 The `iris` example with **real** irises (well, tulips...)
 
     ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-      geom_emoji(emoji="1f337")
+      geom_emoji(emoji="1f337", size = 6)
 
 ![](figure/iris_ex-1.png)
 
 What about plotting `mtcars` with **real** cars?
 
-    ggplot(mtcars, aes(wt, mpg))+ geom_emoji(emoji="1f697")
+    ggplot(mtcars, aes(wt, mpg))+ geom_emoji(emoji="1f697", size = 6)
 
 ![](figure/mtcars-1.png)
 
@@ -53,7 +53,7 @@ Some random cats?
 
     posx <- runif(50, 0, 10)
     posy <- runif(50, 0, 10)
-    ggplot(data.frame(x = posx, y = posy), aes(x, y)) + geom_emoji(emoji="1f63b")
+    ggplot(data.frame(x = posx, y = posy), aes(x, y)) + geom_emoji(emoji="1f63b", size = 6)
 
 ![](figure/catplotlib-1.png)
 
