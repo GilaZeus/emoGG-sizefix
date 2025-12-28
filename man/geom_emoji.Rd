@@ -17,6 +17,8 @@ geom_emoji(
 }
 \description{
 Use emoji as you would \code{\link{geom_point}}.
+
+The \code{size} aesthetic controls the emoji width and height in millimetres.
 }
 \examples{
 \dontrun{
@@ -28,7 +30,7 @@ emoji_search("tulip")
 
 # plot the data, but with emojis
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_emoji(emoji="1f337")
+  geom_emoji(emoji="1f337", size = 12)
 
 }
 }
