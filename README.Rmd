@@ -41,13 +41,13 @@ The `iris` example with **real** irises (well, tulips...)
 
 ```{r iris_ex, fig.height=4, fig.width=4}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_emoji(emoji="1f337")
+  geom_emoji(emoji="1f337", size = 6)
 ```
 
 What about plotting `mtcars` with **real** cars?
 
 ```{r mtcars, fig.height=4, fig.width=4}
-ggplot(mtcars, aes(wt, mpg))+ geom_emoji(emoji="1f697")
+ggplot(mtcars, aes(wt, mpg))+ geom_emoji(emoji="1f697", size = 6)
 ```
 
 Want to map `emoji` as an aesethetic? [Check out this gist](https://gist.github.com/dill/28bb04fc35b51326f01b23d078f5021e)!
@@ -57,7 +57,7 @@ Some random cats?
 ```{r, catplotlib, fig.height=4, fig.width=4}
 posx <- runif(50, 0, 10)
 posy <- runif(50, 0, 10)
-ggplot(data.frame(x = posx, y = posy), aes(x, y)) + geom_emoji(emoji="1f63b")
+ggplot(data.frame(x = posx, y = posy), aes(x, y)) + geom_emoji(emoji="1f63b", size = 6)
 ```
 
 We can also just put a big emoji in the background:
