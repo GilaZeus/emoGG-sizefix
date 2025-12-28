@@ -63,8 +63,8 @@ emojisGrob <- function(coords){
                y             = y,
                image         = emoji,
                default.units = "native",
-               height        = size,
-               width         = size)
+               height        = unit(size, "mm"),
+               width         = unit(size, "mm"))
   }
   ff <- function(coords){
     raster_it(coords$x, coords$y, coords$size, coords$emoji)
